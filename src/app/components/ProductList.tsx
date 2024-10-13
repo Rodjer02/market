@@ -4,6 +4,7 @@ import { Product } from "../type/product";
 import ProductCard from "./ProductCard";
 import Pagination from "./Pagination";
 import Filter from "./Filter";
+import SearchInput from "./SearchInput";
 
 async function getProducts() {
   const res = await fetch("http://localhost:3001/products", {
@@ -44,38 +45,37 @@ const ProductList = () => {
   );
   const productTypes = Array.from(
     new Set(products.map((product) => product.type))
-  ); // Уникальные типы товаров
+  );
 
   return (
-    <div>
+    <div className="p-6 bg-gray-900 text-white">
       <h1>Список товаров</h1>
-      <input
-        type="text"
-        placeholder="Поиск по названию..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        className="mb-4 p-2 border"
-      />
-      <Filter
-        types={productTypes}
-        selectedType={selectedType}
-        onTypeChange={setSelectedType}
-      />
-      <div className="mb-4">
-        <button
-          onClick={() => setSortOrder("asc")}
-          className="mr-2 p-2 border bg-gray-200"
-        >
-          Сортировка по возрастанию
-        </button>
-        <button
-          onClick={() => setSortOrder("desc")}
-          className="p-2 border bg-gray-200"
-        >
-          Сортировка по убыванию
-        </button>
+      <div className="py-6">
+        <SearchInput
+          searchQuery={searchQuery}
+          setSearchQuery={(name) => setSearchQuery(name)}
+        />
+        <Filter
+          types={productTypes}
+          selectedType={selectedType}
+          onTypeChange={setSelectedType}
+        />
+        <div className="flex space-x-4">
+          <button
+            onClick={() => setSortOrder("asc")}
+            className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Сортировка по возрастанию
+          </button>
+          <button
+            onClick={() => setSortOrder("desc")}
+            className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Сортировка по убыванию
+          </button>
+        </div>
       </div>
-      <ul>
+      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 pb-6">
         {currentProducts.map((product) => (
           <li key={product.id}>
             <ProductCard product={product} />

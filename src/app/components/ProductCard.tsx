@@ -13,13 +13,19 @@ const ProductCard = ({ product }: { product: Product }) => {
   };
 
   return (
-    <div className="border p-4 rounded-md">
-      <h2 className="text-lg font-bold">{product.name}</h2>
-      <p>Цена: {product.price} $</p>
-      <img src={product.image} alt={product.name} width="100" />
+    <div className="p-4 bg-gray-800 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+      <img
+        src={product.image}
+        alt={product.name}
+        width="100"
+        className="w-full h-40 object-contain mb-4 rounded"
+      />
+      <h2 className="text-xl font-semibold text-white mb-2">{product.name}</h2>
+      <p className="text-gray-400 mb-4">Цена: {product.price} $</p>
+
       <button
         onClick={handleAddProduct}
-        className="mt-2 bg-blue-500 text-white py-1 px-3 rounded"
+        className="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
       >
         Добавить в корзину
       </button>

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useCartStore } from "../store/cartStore";
+import { FaWindowClose } from "react-icons/fa";
 
 const Cart: React.FC = () => {
   const {
@@ -16,19 +17,26 @@ const Cart: React.FC = () => {
   if (!isOpen) return null; // Если корзина закрыта, не отображаем ничего
 
   return (
-    <div className="fixed top-0 right-0 bg-white border p-4">
-      <h2 className="text-lg font-bold">Корзина</h2>
-      <button onClick={closeCart} className="mt-2 text-red-500">
-        Закрыть
-      </button>
-      <ul>
+    <div
+      className={`fixed top-0 right-0 lg:right-0 bg-white shadow-lg transition-transform transform z-50 
+      ${isOpen ? "translate-x-0" : "translate-x-full"} 
+      w-full h-full lg:w-80 lg:h-full lg:translate-x-0 bg-gray-900 p-3`}
+    >
+      <div className="flex justify-between items-center  mb-4">
+        <h2 className="text-2xl font-bold">Корзина</h2>
+        <button onClick={closeCart}>
+          <FaWindowClose color="white" size={20} />
+        </button>
+      </div>
+
+      <ul className="text-gray-700 mb-4">
         {products.map((product) => (
           <li
             key={product.id}
             className="border-b py-2 flex justify-between items-center"
           >
             <div>
-              <h3>{product.name}</h3>
+              <h3 className="text-white">{product.name}</h3>
               <p>Цена: {product.price} $</p>
               <p>Количество: {product.quantity}</p>
             </div>
@@ -49,7 +57,11 @@ const Cart: React.FC = () => {
           </li>
         ))}
       </ul>
-      <h3>Итоговая стоимость: ${getTotalPrice()}</h3>
+      <div className="mt-4">
+        <p className="font-semibold text-lg">
+          Итоговая стоимость: {getTotalPrice()} $
+        </p>
+      </div>
     </div>
   );
 };

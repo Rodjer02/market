@@ -10,12 +10,14 @@ const Filter: React.FC<FilterProps> = ({
   onTypeChange,
 }) => {
   return (
-    <div className="mb-4">
-      <h2 className="font-bold">Фильтр по типу</h2>
+    <div className="mb-6">
+      <label htmlFor="filter" className="block text-lg font-medium mb-2">
+        Фильтр по типу
+      </label>
       <select
         value={selectedType}
         onChange={(e) => onTypeChange(e.target.value)}
-        className="mt-2 p-2 border"
+        className="w-full p-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
       >
         <option value="">Все</option>
         {types.map((type) => (

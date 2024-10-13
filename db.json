@@ -4,280 +4,280 @@
         "id": 1,
         "type": "electronics",
         "name": "Телевизор",
-        "image": "https://example.com/tv.png",
+        "image": "/images/tv.png",
         "price": 500
       },
       {
         "id": 2,
         "type": "electronics",
         "name": "Ноутбук",
-        "image": "https://example.com/laptop.png",
+        "image": "/images/laptop.webp",
         "price": 1200
       },
       {
         "id": 3,
         "type": "electronics",
         "name": "Смартфон",
-        "image": "https://example.com/phone.png",
+        "image": "/images/phone.png",
         "price": 800
       },
       {
         "id": 4,
         "type": "electronics",
         "name": "Игровая консоль",
-        "image": "https://example.com/console.png",
+        "image": "/images/console.png",
         "price": 400
       },
       {
         "id": 5,
         "type": "electronics",
         "name": "Фитнес-трекер",
-        "image": "https://example.com/fitnesstracker.png",
+        "image": "/images/fitnesstracker.png",
         "price": 100
       },
       {
         "id": 6,
         "type": "electronics",
         "name": "Беспроводные наушники",
-        "image": "https://example.com/headphones.png",
+        "image": "/images/headphones.png",
         "price": 150
       },
       {
         "id": 7,
         "type": "furniture",
         "name": "Стул",
-        "image": "https://example.com/chair.png",
+        "image": "/images/chair.png",
         "price": 100
       },
       {
         "id": 8,
         "type": "furniture",
         "name": "Стол",
-        "image": "https://example.com/table.png",
+        "image": "/images/table.png",
         "price": 200
       },
       {
         "id": 9,
         "type": "furniture",
         "name": "Диван",
-        "image": "https://example.com/sofa.png",
+        "image": "/images/sofa.png",
         "price": 800
       },
       {
         "id": 10,
         "type": "furniture",
         "name": "Кровать",
-        "image": "https://example.com/bed.png",
+        "image": "/images/bed.png",
         "price": 600
       },
       {
         "id": 11,
         "type": "furniture",
         "name": "Шкаф",
-        "image": "https://example.com/wardrobe.png",
+        "image": "/images/wardrobe.png",
         "price": 400
       },
       {
         "id": 12,
         "type": "furniture",
         "name": "Тумбочка",
-        "image": "https://example.com/nightstand.png",
+        "image": "/images/nightstand.png",
         "price": 150
       },
       {
         "id": 13,
         "type": "clothing",
         "name": "Футболка",
-        "image": "https://example.com/tshirt.png",
+        "image": "/images/tshirt.png",
         "price": 20
       },
       {
         "id": 14,
         "type": "clothing",
         "name": "Джинсы",
-        "image": "https://example.com/jeans.png",
+        "image": "/images/jeans.webp",
         "price": 50
       },
       {
         "id": 15,
         "type": "clothing",
         "name": "Куртка",
-        "image": "https://example.com/jacket.png",
+        "image": "/images/jacket.png",
         "price": 100
       },
       {
         "id": 16,
         "type": "clothing",
         "name": "Шорты",
-        "image": "https://example.com/shorts.png",
+        "image": "/images/shorts.png",
         "price": 30
       },
       {
         "id": 17,
         "type": "clothing",
         "name": "Свитшот",
-        "image": "https://example.com/sweatshirt.png",
+        "image": "/images/sweetshirt.webp",
         "price": 60
       },
       {
         "id": 18,
         "type": "clothing",
         "name": "Спортивные брюки",
-        "image": "https://example.com/sportpants.png",
+        "image": "/images/sportpants.png",
         "price": 45
       },
       {
         "id": 19,
         "type": "appliances",
         "name": "Стиральная машина",
-        "image": "https://example.com/washingmachine.png",
+        "image": "/images/washingmashine.png",
         "price": 700
       },
       {
         "id": 20,
         "type": "appliances",
         "name": "Холодильник",
-        "image": "https://example.com/fridge.png",
+        "image": "/images/fridge.png",
         "price": 1000
       },
       {
         "id": 21,
         "type": "appliances",
         "name": "Микроволновая печь",
-        "image": "https://example.com/microwave.png",
+        "image": "/images/microwave.webp",
         "price": 150
       },
       {
         "id": 22,
         "type": "appliances",
         "name": "Посудомоечная машина",
-        "image": "https://example.com/dishwasher.png",
+        "image": "/images/dishwasher.png",
         "price": 600
       },
       {
         "id": 23,
         "type": "appliances",
         "name": "Пылесос",
-        "image": "https://example.com/vacuum.png",
+        "image": "/images/vacuum.png",
         "price": 200
       },
       {
         "id": 24,
         "type": "appliances",
         "name": "Кофемашина",
-        "image": "https://example.com/coffeemachine.png",
+        "image": "/images/coffeemachine.png",
         "price": 300
       },
       {
         "id": 25,
         "type": "electronics",
         "name": "Умные часы",
-        "image": "https://example.com/smartwatch.png",
+        "image": "/images/smartwatch.png",
         "price": 250
       },
       {
         "id": 26,
         "type": "electronics",
         "name": "Планшет",
-        "image": "https://example.com/tablet.png",
+        "image": "/images/tablet.png",
         "price": 400
       },
       {
         "id": 27,
         "type": "electronics",
         "name": "Камера",
-        "image": "https://example.com/camera.png",
+        "image": "/images/camera.png",
         "price": 900
       },
       {
         "id": 28,
         "type": "furniture",
         "name": "Кресло",
-        "image": "https://example.com/armchair.png",
+        "image": "/images/armchair.png",
         "price": 300
       },
       {
         "id": 29,
         "type": "furniture",
         "name": "Полка",
-        "image": "https://example.com/shelf.png",
+        "image": "/images/shelf.png",
         "price": 100
       },
       {
         "id": 30,
         "type": "furniture",
         "name": "Зеркало",
-        "image": "https://example.com/mirror.png",
+        "image": "/images/mirror.png",
         "price": 120
       },
       {
         "id": 31,
         "type": "clothing",
         "name": "Кроссовки",
-        "image": "https://example.com/sneakers.png",
+        "image": "/images/sneakers.png",
         "price": 80
       },
       {
         "id": 32,
         "type": "clothing",
         "name": "Пальто",
-        "image": "https://example.com/coat.png",
+        "image": "/images/coat.png",
         "price": 150
       },
       {
         "id": 33,
         "type": "clothing",
         "name": "Шапка",
-        "image": "https://example.com/hat.png",
+        "image": "/images/hat.png",
         "price": 25
       },
       {
         "id": 34,
         "type": "clothing",
         "name": "Пижама",
-        "image": "https://example.com/pajamas.png",
+        "image": "/images/pajams.png",
         "price": 40
       },
       {
         "id": 35,
         "type": "appliances",
         "name": "Тостер",
-        "image": "https://example.com/toaster.png",
+        "image": "/images/toaster.png",
         "price": 50
       },
       {
         "id": 36,
         "type": "appliances",
         "name": "Блендер",
-        "image": "https://example.com/blender.png",
+        "image": "/images/blender.png",
         "price": 100
       },
       {
         "id": 37,
         "type": "appliances",
         "name": "Электрочайник",
-        "image": "https://example.com/kettle.png",
+        "image": "/images/kettle.png",
         "price": 30
       },
       {
         "id": 38,
         "type": "appliances",
         "name": "Плита",
-        "image": "https://example.com/stove.png",
+        "image": "/images/stove.png",
         "price": 800
       },
       {
         "id": 39,
         "type": "appliances",
         "name": "Утюг",
-        "image": "https://example.com/iron.png",
+        "image": "/images/iron.png",
         "price": 60
       },
       {
         "id": 40,
         "type": "appliances",
         "name": "Фен",
-        "image": "https://example.com/hairdryer.png",
+        "image": "/images/hairdryer.png",
         "price": 40
       }
     ]
