@@ -14,7 +14,7 @@ const Cart: React.FC = () => {
     getTotalPrice,
   } = useCartStore();
 
-  if (!isOpen) return null; // Если корзина закрыта, не отображаем ничего
+  if (!isOpen) return null;
 
   return (
     <div

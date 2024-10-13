@@ -1,13 +1,12 @@
 "use client";
 
 import React from "react";
-import { useCartStore } from "../store/cartStore"; // Импортируем cartStore
+import { useCartStore } from "../store/cartStore";
 import { Product } from "../type/product";
 
 const ProductCard = ({ product }: { product: Product }) => {
   const addProduct = useCartStore((state) => state.addProduct);
-  const openCart = useCartStore((state) => state.openCart); // Открываем корзину после добавления товара
-
+  const openCart = useCartStore((state) => state.openCart);
   const handleAddProduct = () => {
     addProduct(product);
   };

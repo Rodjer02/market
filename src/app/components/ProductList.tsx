@@ -8,7 +8,7 @@ import SearchInput from "./SearchInput";
 
 async function getProducts() {
   const res = await fetch("http://localhost:3001/products", {
-    cache: "no-store", // Отключение кэширования для получения свежих данных
+    cache: "no-store",
   });
   if (!res.ok) throw new Error("Не удалось загрузить данные");
   return res.json();
